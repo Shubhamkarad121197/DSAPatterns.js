@@ -40,8 +40,6 @@
 // In the fourth row, there are 4 '*' characters separated by space
 
 // So, the pattern forms a triangle shape where each row has an increasing number of '*' characters, starting from 1 in the first row and incrementing by 1 in each subsequent row until reaching 4 in the fourth row, which corresponds to the value of n.
-
-
 function printPyramid(n){
     let result=[]
     for(let i=1;i<n;i++){
