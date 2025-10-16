@@ -49,6 +49,6 @@ function printPyramid(n){
         }
         result.push(row)
     }
-    return result;
+    return result.join('\n');
 }
 console.log(printPyramid(5))
