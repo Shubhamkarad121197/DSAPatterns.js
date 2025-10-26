@@ -48,20 +48,17 @@
 //1. Brute Force Solution
 function lengthOfLongestSubstringKDistinct(s, k) {
     let maxLen=0;
-    debugger;
     for(let i=0;i<s.length;i++){
         let distinct=new Set();
-        for(j=i;j<s.length;j++){
+        for(let j=i;j<s.length;j++){
             distinct.add(s[j])
             if(distinct.size<=k){
                 maxLen=Math.max(maxLen,j-i+1)
-            }
-            else{
-                break;
             }
         }
     }
     return maxLen;
 }
-
+console.log(lengthOfLongestSubstringKDistinct('abacd',3))//4
+console.log(lengthOfLongestSubstringKDistinct('Xyyzya',3))//5
 console.log(lengthOfLongestSubstringKDistinct("eceba", 2)); // Output: 3
