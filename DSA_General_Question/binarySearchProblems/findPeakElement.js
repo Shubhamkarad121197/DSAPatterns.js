@@ -18,7 +18,7 @@
 // 3 is a peak element and your function should return the index number 2.
 
 
-let arr=[1,2,3,1]
+let arr=[1,2,3,1];
 function findPeakElement(arr){
 
     let left=0,right=arr.length-1;
