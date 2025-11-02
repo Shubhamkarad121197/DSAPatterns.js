@@ -50,7 +50,7 @@ function compareString(S,T){
     
 
     for(let i=0;i<S.length;i++){
-        debugger;
+        
         if(S[i]=='#'){
 
             s1.pop()
